@@ -34,7 +34,7 @@ async function getUser(email: string): Promise<User | undefined> {
             if (passwordsMatch)  return user;
                 // console.log("sucessfully authenticatd user: ", user)
           }
-          console.log("invalid user: ", user);
+          // console.log("invalid user: ", user);
           return null;
         },
       }),
