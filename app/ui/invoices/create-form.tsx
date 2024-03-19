@@ -45,7 +45,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
             {state.errors?.customerId &&
               state.errors.customerId.map((error: string) => (
                 <p className="mt-2 text-sm text-red-500" key={error}>
-                  {console.log(state, error, state.errors.customerId)}
                   {error}
                 </p>
               ))}
