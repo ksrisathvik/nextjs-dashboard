@@ -31,7 +31,7 @@ async function getUser(email: string): Promise<User | undefined> {
             const passwordsMatch = await bcrypt.compare(password, user.password);
  
             if (passwordsMatch)  return user;
-                // console.log("sucessfully authenticatd user: ", user)
+                console.log("sucessfully authenticatd user: ", user)
           }
           // console.log("invalid user: ", user);
           return null;
